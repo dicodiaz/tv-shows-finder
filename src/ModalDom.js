@@ -9,7 +9,9 @@ export default class ModalDom {
     <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close"></button>
     </div>
     <div class="col-sm-11 col-lg-9 col-xl-6 mb-2">
-    <img class="img-fluid" src="${episode.image.original}" alt="${episode.name}"></img>
+    <img class="img-fluid" src="${
+      episode.image && episode.image.original ? episode.image.original : ''
+    }" alt="${episode.name}"></img>
     </div>
     <h2 class="mb-0 display-6">${episode.name}</h2>
     <div class="row row-cols-2 gy-1 mb-2 fw-bold">

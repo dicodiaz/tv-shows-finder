@@ -13,7 +13,9 @@ export default class HomepageDom {
         const card = document.createElement('div');
         card.innerHTML = `<div id = "card${episode.id}" class="p-3">
           <div class="card border">
-            <img src="${episode.image.medium}" class="card-img-top" alt="${episode.name}"></img>
+            <img src="${
+              episode.image && episode.image.medium ? episode.image.medium : ''
+            }" class="card-img-top" alt="${episode.name}"></img>
             <div class="card-body">
               <div class="d-flex flex-row justify-content-between">
               <h5 class="card-title">${episode.name}</h5>
@@ -23,7 +25,9 @@ export default class HomepageDom {
               </div>
               </div>
               <div class="d-flex flex-column justify-content-between">
-              <button class="btn btn-outline-dark m-3" data-bs-toggle="modal" data-bs-target="#modal" data-bs-episodeId="${episode.id}" data-bs-showId="${showId}">Comments</button>
+              <button class="btn btn-outline-dark m-3" data-bs-toggle="modal" data-bs-target="#modal" data-bs-episodeId="${
+                episode.id
+              }" data-bs-showId="${showId}">Comments</button>
             </div>
             </div>
           </div>
