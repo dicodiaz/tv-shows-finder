@@ -12,28 +12,31 @@ const searchBar = document.querySelector('#search-bar');
 const form = document.querySelector('#form');
 const searchBtn = document.querySelector('#search-btn');
 const welcomeMsg = document.querySelector('#welcome-msg');
+const showInfo = document.querySelector('#show-info');
 
 window.onload = () => {
   form.addEventListener('submit', (event) => {
     event.preventDefault();
   });
   searchBtn.addEventListener('click', () => {
-    if (searchBar.value !== '') {
-      TvMaze.singleSearch(searchBar.value).then((show) => {
+    const searchBarValue = searchBar.value;
+    searchBar.value = '';
+    if (searchBarValue !== '') {
+      TvMaze.singleSearch(searchBarValue).then((show) => {
         if (show) {
           TvMaze.getEpisodes(show.id).then((episodes) => {
-            HomepageDom.insertEpisodes(episodes, show.id);
+            HomepageDom.insertEpisodes(episodes, show.id).insertShowInfo(show, episodes, showInfo);
             Involvement.getLikes().then((likes) => {
               HomepageDom.insertLikesCount(likes);
             });
           });
           welcomeMsg.classList.add('d-none');
         } else {
+          showInfo.innerText = '';
           document.querySelector('.card-wrapper').innerHTML = '';
           welcomeMsg.classList.remove('d-none');
-          welcomeMsg.innerText = `No show found with the name "${searchBar.value}". Please try again.`;
+          welcomeMsg.innerText = `No show found with the name "${searchBarValue}". Please try again.`;
         }
-        searchBar.value = '';
       });
     }
   });

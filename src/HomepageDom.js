@@ -45,6 +45,7 @@ export default class HomepageDom {
         });
       });
     }
+    return this;
   };
 
   static insertLikesCount = (data) => {
@@ -56,6 +57,7 @@ export default class HomepageDom {
     likeSpans.forEach((likeSpan) => {
       likeSpan.innerText = likeSpan.innerText || 0;
     });
+    return this;
   };
 
   static updateSingleLikeCount = (id) => {
@@ -64,6 +66,13 @@ export default class HomepageDom {
       const likeSpan = document.getElementById(`span${id}`);
       likeSpan.innerHTML = likeCount;
     });
+    return this;
+  };
+
+  static insertShowInfo = (show, episodes, container) => {
+    console.log(show, episodes, container);
+    const episodesCount = this.getEpisodesCount(episodes);
+    container.innerText = `${show.name} (${episodesCount} episodes)`;
   };
 
   static getEpisodesCount = (episodes) => episodes.length;
