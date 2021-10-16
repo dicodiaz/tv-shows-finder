@@ -4,50 +4,57 @@
 
 > TV Show Finder is a quick tool to look for any TV show. It's build based on 2 external APIs, TvMaze API and Microverse's Involvement API, using JavaScript, Bootstrap and Webpack.
 
+## Mobile
+
 ![screenshot](./app_screenshot.png)
+
+## Desktop
+
+![screenshot](./app_screenshot-2.png)
 
 ## Built With
 
-- HTML, CSS, JavaScript
-- Visual Studio Code: A source code editor
-- Git: A tool for managing source code
+- HTML
+- Bootsrap
+- JavaScript
 - Webpack
+- VSCode
+- Gitflow & GitHub
 
 ## Live Demo
 
-[Live Demo Link](https://mustabbas.github.io/TvMovies/dist)
+[Live Demo Link](https://dicodiaz.me/tv-shows-finder/)
 
 ## Getting Started
 
-Download the ZIP from this [Link](https://github.com/mustabbas/TvMovies.git), or run the following git command to clone the files to your machine:
+To get this project up and running, follow these simple steps:
 
-git clone https://github.com/mustabbas/TvMovies.git
-Once the files are on your machine, open the folder in Visual Studio Code.
-Change directory cd into the just created from the project
-To install dependencies use Run npm install
-To start your project use npm run build
+1. Clone the repository into your machine.
+2. Open the project's folder with your preferred source-code editor.
+3. Run `npm install`.
+4. Run `npm start`.
 
 ### Prerequisites
 
-npm.
-A web browser.
+- Any modern web browser.
+- Any source-code editor (VSCode recommended).
 
 ### Setup
 
-Follow the steps described before.
+- Follow the steps described before.
 
 ## Authors
-
-👤 **MUSTAFA ABBAS**
-
-- GitHub: [@githubhandle](https://github.com/mustabbas)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mustafa-abbas-7555ba10a)
 
 👤 **Dico Diaz Dussan**
 
 - GitHub: [@dicodiaz](https://github.com/dicodiaz)
 - Twitter: [@DicoDiaz1](https://twitter.com/DicoDiaz1)
 - LinkedIn: [Dico Diaz Dussan](https://www.linkedin.com/in/dico-diaz-dussan-476106a6/)
+
+👤 **MUSTAFA ABBAS**
+
+- GitHub: [@githubhandle](https://github.com/mustabbas)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mustafa-abbas-7555ba10a)
 
 ## 🤝 Contributing
 
