@@ -2,7 +2,7 @@
 
 # TV Show Finder
 
-> TV Show Finder is a quick tool to look for any TV show. It's build based on 2 external APIs, TvMaze API and Microverse's Involvement API, using JavaScript, Bootstrap and Webpack.
+TV Show Finder is a quick tool to look for any TV show. It's built based on 2 external APIs, TvMaze API and Microverse's Involvement API, using JavaScript, Bootstrap, and Webpack.
 
 ## Mobile
 
