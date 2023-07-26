@@ -70,7 +70,6 @@ export default class HomepageDom {
   };
 
   static insertShowInfo = (show, episodes, container) => {
-    console.log(show, episodes, container);
     const episodesCount = this.getEpisodesCount(episodes);
     container.innerText = `${show.name} (${episodesCount} episodes)`;
   };
