@@ -3,7 +3,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import HomepageDom from './HomepageDom.js';
 import Involvement from './Involvement.js';
 import ModalDom from './ModalDom.js';
-import './styles.css';
 import TvMaze from './TvMaze.js';
 
 const modal = document.querySelector('#modal');
@@ -33,7 +32,7 @@ window.onload = () => {
           welcomeMsg.classList.add('d-none');
         } else {
           showInfo.innerText = '';
-          document.querySelector('.card-wrapper').innerHTML = '';
+          document.querySelector('#card-wrapper').innerHTML = '';
           welcomeMsg.classList.remove('d-none');
           welcomeMsg.innerText = `No show found with the name "${searchBarValue}". Please try again.`;
         }

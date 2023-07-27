@@ -6,29 +6,28 @@ export default class HomepageDom {
       const episodesCount = this.getEpisodesCount(episodes);
       const episodesCountContainer = document.querySelector('#episodes-count');
       if (episodesCountContainer) episodesCountContainer.innerText = episodesCount;
-      const cardWrapper = document.querySelector('.card-wrapper');
+      const cardWrapper = document.querySelector('#card-wrapper');
       cardWrapper.innerHTML = '';
-      cardWrapper.id = `show-${showId}`;
       episodes.forEach((episode) => {
         const card = document.createElement('div');
-        card.innerHTML = `<div id = "card${episode.id}" class="p-3">
-          <div class="card border">
+        card.innerHTML = `<div class="p-3 h-100">
+          <div class="card border h-100">
             <img src="${
               episode.image && episode.image.medium ? episode.image.medium : ''
             }" class="card-img-top" alt="${episode.name}"></img>
-            <div class="card-body">
-              <div class="d-flex flex-row justify-content-between">
-              <h5 class="card-title">${episode.name}</h5>
-              <div class="d-flex flex-column align-items-center">
-                <a id="like${episode.id}" class="like"><i class="far fa-heart"></i></a>
-                <span><span id= "span${episode.id}" class="like-span"></span> likes</span>
-              </div>
+            <div class="card-body d-flex flex-column justify-content-between">
+              <div class="row mx-0 g-0 row-cols-2 justify-content-between align-items-center">
+                <h5 class="flex-grow-1 px-2 mb-0">${episode.name}</h5>
+                <div class="col-auto d-flex flex-column align-items-center px-2">
+                  <a id="like${episode.id}" role="button"><i class="far fa-heart"></i></a>
+                  <span><span id= "span${episode.id}" class="like-span"></span> likes</span>
+                </div>
               </div>
               <div class="d-flex flex-column justify-content-between">
-              <button class="btn btn-outline-dark m-3" data-bs-toggle="modal" data-bs-target="#modal" data-bs-episodeId="${
-                episode.id
-              }" data-bs-showId="${showId}">Comments</button>
-            </div>
+                <button class="btn btn-outline-dark m-3" data-bs-toggle="modal" data-bs-target="#modal" data-bs-episodeId="${
+                  episode.id
+                }" data-bs-showId="${showId}">Comments</button>
+              </div>
             </div>
           </div>
         </div>`;
