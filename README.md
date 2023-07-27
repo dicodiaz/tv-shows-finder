@@ -1,71 +1,158 @@
-![](https://img.shields.io/badge/Microverse-blueviolet)
+<a name="readme-top"></a>
 
-# TV Show Finder
+# 📗 Table of Contents
 
-TV Show Finder is a quick tool to look for any TV show. It's built based on 2 external APIs, TvMaze API and Microverse's Involvement API, using JavaScript, Bootstrap, and Webpack.
+- [📖 About the Project](#about-project)
+  - [🗝️ Key Features](#key-features)
+  - [🛠️ Built With](#built-with)
+- [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-## Mobile
+# 📖 TV Show Finder <a name="about-project"></a>
 
-![screenshot](./app_screenshot.png)
+**TV Show Finder** is a tool to look for any TV show. It consumes two different APIs to give the user a seamless experience.
 
-## Desktop
+## 🗝️ Key Features <a name="key-features"></a>
 
-![screenshot](./app_screenshot-2.png)
+- Consumes the [TVmaze API](https://www.tvmaze.com/api)
+- Consumes Microverse's [Involvement API](https://microverse.notion.site/Involvement-API-869e60b5ad104603aa6db59e08150270)
+- Allows the user to search by TV show's name
+- Allows the user to like and comment on any episode
+- Allows the user to see other users' likes and comments
 
-## Built With
+## 🛠️ Built With <a name="built-with"></a>
 
-- HTML
-- Bootsrap
-- JavaScript
-- Webpack
-- VSCode
-- Gitflow & GitHub
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li>JavaScript</li>
+  </ul>
+  <ul>
+    <li>HTML</li>
+  </ul>
+  <ul>
+    <li>Bootstrap</li>
+  </ul>
+  <ul>
+    <li>Webpack</li>
+  </ul>
+</details>
 
-## Live Demo
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-[Live Demo Link](https://dicodiaz.me/tv-shows-finder/)
+## 🚀 Live Demo <a name="live-demo"></a>
 
-## Getting Started
+- [https://tv-shows-finder.dicodiaz.com.co/](https://tv-shows-finder.dicodiaz.com.co/)
 
-To get this project up and running, follow these simple steps:
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-1. Clone the repository into your machine.
-2. Open the project's folder with your preferred source-code editor.
-3. Run `npm install`.
-4. Run `npm start`.
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-- Any modern web browser.
-- Any source-code editor (VSCode recommended).
+In order to run this project you need:
+
+- Install [Node.js](https://nodejs.org/en)
 
 ### Setup
 
-- Follow the steps described before.
+Clone this repository to your desired folder:
 
-## Authors
+```sh
+  cd my-folder
+  git clone git@github.com:dicodiaz/tv-shows-finder.git
+```
+
+### Install
+
+Install this project with:
+
+```sh
+  cd tv-shows-finder
+  npm install
+```
+
+### Usage
+
+To run the project, execute the following commands:
+
+```sh
+  npm run serve
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+```sh
+  npm run test
+```
+
+### Deployment
+
+There's a CD pipeline set up to track the `develop` branch.
+
+Please open a PR from your feature branch to `develop` in order to contribute.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 👥 Authors <a name="authors"></a>
 
 👤 **Dico Diaz Dussan**
 
 - GitHub: [@dicodiaz](https://github.com/dicodiaz)
 - LinkedIn: [Dico Diaz Dussan](https://www.linkedin.com/in/dico-diaz-dussan/)
-- Portfolio: [dicodiaz.com.co](https://dicodiaz.com.co)
+- Portfolio: [portfolio.dicodiaz.com.co](https://portfolio.dicodiaz.com.co)
 
 👤 **MUSTAFA ABBAS**
 
 - GitHub: [@githubhandle](https://github.com/mustabbas)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mustafa-abbas-7555ba10a)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] Increase unit test coverage
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/mustabbas/TvMovies/issues).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## ⭐️ Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+- A huge thanks to [Microverse](https://www.microverse.org) for their constant support.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./MIT.md) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
